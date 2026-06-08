@@ -62,7 +62,7 @@ This is non-negotiable and stated first because violating it is the most common,
 `ideate` is a **multi-turn facilitation**, not a single generated document. Run it as a real back-and-forth:
 - **On re-entry, load the existing brief first.** Before anything else, check for `docs/CONCEPT_BRIEF.md`; if it exists, read it and continue editing *that* file. Never start a fresh brief over an existing one — that destroys the decision log this skill exists to preserve.
 - **Stop-and-confirm at every gate.** Don't run the whole funnel in one turn and dump a finished brief. Lock decisions **one at a time, as the user reacts.**
-- **Edit the brief every turn.** After each meaningful exchange, write the new decision/finding into `CONCEPT_BRIEF.md` (don't keep it in your head, and don't regenerate the whole file — diff into it).
+- **Edit the brief every turn — then show it.** After each meaningful exchange, *actually write* the new decision/finding into the brief (diff into it; don't regenerate the whole file). **Then mirror the key change inline in chat** so the user sees it without needing the file open — and never claim a brief update you didn't actually make.
 - **Ask, then wait.** When you pose options or a pressure-test verdict, stop and let the user respond before converging.
 
 ## The two modes
@@ -109,7 +109,11 @@ This is the skill's voice. Full battery in `references/facilitation-guide.md`.
 
 ## The output: one living CONCEPT_BRIEF
 
-The skill's product is a single self-contained `CONCEPT_BRIEF.md`, saved to `docs/CONCEPT_BRIEF.md`, **edited in place every turn and never regenerated from scratch.** It must stand alone (no reliance on chat memory) because the build happens in other chats and tools. The full schema is `references/concept-brief-template.md`; the `prompt-pack` handoff contract is `references/handoff-guide.md`.
+The skill's product is a single self-contained `CONCEPT_BRIEF.md`, **edited in place every turn and never regenerated from scratch.** It must stand alone (no reliance on chat memory) because the build happens in other chats and tools.
+
+**Where to save it — so the user can actually see it.** Put the brief *inside the workspace the user has open.* For an existing project: `docs/CONCEPT_BRIEF.md` in that repo. For a brand-new greenfield idea with no repo yet: save it under the **current working directory** (e.g. `./CONCEPT_BRIEF.md`) and **tell the user the exact path.** Never write it to a scratch folder outside their open workspace — it won't appear in their file tree and they won't see it. (Visibility has nothing to do with git; it depends on the file being where the user is looking.)
+
+The full schema is `references/concept-brief-template.md`; the `prompt-pack` handoff contract is `references/handoff-guide.md`.
 
 ## Pitfalls to avoid (each maps to a real failure mode)
 

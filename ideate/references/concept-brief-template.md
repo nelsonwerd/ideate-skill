@@ -1,6 +1,6 @@
 # CONCEPT_BRIEF Template
 
-The CONCEPT_BRIEF is `ideate`'s product: one self-contained file that holds the locked concept, the honest verdict, and the phased roadmap. Copy this scaffold to **`docs/CONCEPT_BRIEF.md`**, fill the `<placeholders>`, delete guidance comments, and **edit it in place every turn — never regenerate it from scratch.**
+The CONCEPT_BRIEF is `ideate`'s product: one self-contained file that holds the locked concept, the honest verdict, and the phased roadmap. Copy this scaffold to **`docs/CONCEPT_BRIEF.md`** *inside the workspace the user has open* (for a no-repo greenfield idea, save it under the current working directory and tell the user the path — never a scratch folder they aren't viewing). Fill the `<placeholders>`, delete guidance comments, and **edit it in place every turn — never regenerate it from scratch** (and mirror key changes inline so the user can see them).
 
 Rules that make the brief work:
 - **One file, edited in place.** Each phase reads it first and diffs new decisions into it. Regenerating it loses the decision log and re-opens settled questions.
