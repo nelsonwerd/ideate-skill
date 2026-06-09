@@ -20,6 +20,12 @@ Its central mechanism is **one living `CONCEPT_BRIEF.md`, edited in place, never
 
 Two modes: **greenfield** (fuzzy idea → concept) and **refinement** (evaluate/improve an existing thing, treating it as the "golden master" with an enforceable parity contract).
 
+## Quickstart — try this first
+
+> **You type:** "I have an idea for *<your idea>* — help me decide if it's worth building."
+>
+> **You get back:** a living **`docs/CONCEPT_BRIEF.md`** — a locked concept, a forced success metric and kill criterion, and a phased roadmap. ideate will pressure-test the idea (and push back) before it writes a line of roadmap.
+
 ## Install
 
 Skills live in `~/.claude/skills/` (all projects) or `.claude/skills/` (one project). Put the `ideate/` folder in either.
@@ -53,6 +59,12 @@ This follows the open **[Agent Skills](https://agentskills.io) standard**, so th
 | **Anyone** | any agent | it's just instructions — open `SKILL.md` and point your agent at it |
 
 <sub>Exact in-app menu names and commands shift between versions — the linked docs are the source of truth. Claude-specific behaviors (auto-activation by description) are invoked explicitly in Codex; the *methodology* itself is fully portable.</sub>
+
+**Runtime support:**
+
+| | Claude app | Claude Code | OpenAI Codex | Generic agent |
+|---|---|---|---|---|
+| **ideate** | Strong — concept work; brief kept inline when there's no file tree | **Best** | Strong — with a local workspace for the brief | Works — full method; keep the brief in a file or inline |
 
 ## Use it
 
